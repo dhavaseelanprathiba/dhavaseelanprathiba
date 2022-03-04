@@ -1,0 +1,44 @@
+
+#parent{
+background-color:black;
+display: grid;
+grid-template-columns:repeat(4,70px);
+grid-template-rows:repeat(6,70px);
+grid-row-gap:2px;
+margin-top:100px;
+border: 3px solid black;
+width:21%;
+height:430px;
+margin-left:400px;
+border-radius:10px;
+}
+.box{
+text-align:center;
+justify-content: center;
+padding: 10px;
+margin:10px;
+}
+.box:nth-child(odd){
+background-color:darkgrey;
+padding:10px;
+font-size:30px;
+border:2px solid darkgrey;
+border-radius:15px;
+}
+.box:nth-child(even){
+background-color:skyblue;
+font-size:30px;
+padding:10px;
+border:2px solid skyblue;
+border-radius:15px;
+}
+.display{
+grid-column: span 4;
+font-weight:bold;
+}
+.zero{
+grid-column: span 3;
+}
+.six{
+grid-column: span 3;
+}
