@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form validation3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+function formValitation() {
+	var fullname = 
+                    document.forms["RegForm"]["fullname"];
+                var email = 
+                    document.forms["RegForm"]["email"];
+                var phonenumber = 
+                    document.forms["RegForm"]["phonenumber"];
+                var gender = 
+                    document.forms["RegForm"]["gender"];
+                var Username = 
+                    document.forms["RegForm"]["Username"];
+                    var password = 
+                    document.forms["RegForm"]["password"];
+                    var conformpassword = 
+                    document.forms["RegForm"]["conformpassword"];
+                    var password = 
+                    document.forms["RegForm"]["Password"];
+                var address = 
+                    document.forms["RegForm"]["Address"];
+  
+                if (fullname.value == "") {
+                    window.alert("Please enter your fullname.");
+                    fullname.focus();
+                    return false;
+                }
+  
+                if (address.value == "") {
+                    window.alert("Please enter your address.");
+                    address.focus();
+                    return false;
+                }
+  
+                if (email.value == "") {
+                    window.alert(
+                      "Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+  
+                if (phonenumber.value == "") {
+                    window.alert(
+                      "Please enter your telephone number.");
+                    phonenumber.focus();
+                    return false;
+                }
+  
+                if (username.value == "") {
+                    window.alert("Please enter your password");
+                    username.focus();
+                    return false;
+                }
+                 if (password.value == "") {
+                    window.alert("Please enter your password");
+                    password.focus();
+                    return false;
+                }
+   if (conformpassword.value == "") {
+                    window.alert("Please enter your password");
+                    conformpassword.focus();
+                    return false;
+                }
+  
+ 
+  
+                if (gender.selectedIndex < 1) {
+                    alert("Please enter your course.");
+                    gender.focus();
+                    return false;
+                }
+  
+                return true;
+            }
+</script>
+</head>
+<body>
+<div class="container">
+
+<div class="title">Registration</div>
+<form name="RegForm" action="/submit.php" onsubmit="return formValitation()" method="post" >
+<div class="user-details">
+<div class="input-box">
+<span class="details">Full Name</span>
+<input type="text"  id="fullname" name="fullname"  placeholder="Enter your name">
+</div>
+<div class="input-box">
+<span class="details">Email</span>
+<input type="text" id="email" name="email" placeholder="Enter your email">
+</div>
+<div class="input-box">
+<span class="details">Phone Number</span>
+<input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your Phone number">
+</div>
+<div class="input-box">
+<span class="details">Username</span>
+<input type="text" id="username" name="username" placeholder="Enter your Username">
+</div>
+<div class="input-box">
+<span class="details">Password</span>
+<input type="text" id="Password" name="Password" placeholder="password">
+</div>
+<div class="input-box">
+<span class="details">Conform Password</span>
+<input type="text" id="conformpassword" name="conformpassword" placeholder="Conform Password">
+</div>
+</div>
+
+<div class="button">
+<input type="button" name="submit" value="Register">
+</div>
+</form>
+</div>
+
+
+
+
+ 
+
+
+
+
+</body>
+</html>
