@@ -1,0 +1,95 @@
+.parent{
+	margin: 10px;
+display: grid;
+/*grid-template-columns: 100px 100px;*/
+/*grid-template-columns: 100px auto;*/
+grid-template-columns: repeat(9,1fr);
+/*grid-template-columns: 3fr 1fr;*/
+grid-template-rows:repeat(8,1fr);
+/*grid-auto-rows:100px;*/
+grid-row-gap:1px;
+}
+.child:nth-child(odd){
+background-color:skyblue;
+padding: 20px;
+color: white;
+font-size: 30px;
+border: 1px solid white;
+}
+.child:nth-child(even){
+background-color:lightgreen;
+padding:20px;
+color: white;
+font-size: 30px;
+border: 1px solid white;
+}
+.child{
+text-align: center;
+}
+.zero{
+grid-column: span 9;
+text-align: center;
+}
+.fifteen{
+grid-column: span 3;
+text-align: center;
+}
+.eighteen{
+grid-column: span 3;
+text-align: center;
+}
+.thirtyone{
+grid-column: span 3;
+text-align: center;
+}
+.thirtyseven{
+grid-column: span 3;
+text-align: center;
+}
+.fourty{
+grid-column: span 3;
+text-align: center;
+}
+.fiftyone{
+grid-column: span 3;
+text-align: center;
+}
+.fourteen{
+grid-row:span 7;
+}
+.library{
+grid-column: span 3;
+text-align: center;
+}
+h1{
+text-align: center;
+color: orange;
+background-color: black;
+}
+.container{
+display: grid;
+grid-template-columns:repeat(3,200px);
+grid-template-rows:repeat(3,200px);
+grid-row-gap:8px;
+grid-column-gap:8px;
+justify-content: center;
+}
+.container img{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
+.container1{
+display: grid;
+grid-template-columns: repeat(3,200px);
+grid-template-rows: repeat(3,200px);
+justify-content: center;
+margin-top: 100px;
+grid-gap:10px;
+}
+.container1 img{
+width:100%;
+height:100%;
+border-radius:10px;
+border: 2px solid skyblue;
+}
