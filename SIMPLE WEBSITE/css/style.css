@@ -1,0 +1,102 @@
+body{
+background-color: #f4f4f4;
+color: #333;
+line-height: 1.34em;
+margin: 0;
+font-family:tahoma;
+font-size: 16px;
+}
+.container{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+.container h1{
+text-align: center;
+}
+#header1{
+background-color: coral;
+color: white;
+font-size: 30px;
+}
+#navbar{
+background-color: black;
+color: white;
+position: sticky;
+top: 0px;
+}
+#navbar ul{
+color: white;
+padding: 0;
+list-style: none;
+}
+#navbar li{
+display: inline;
+float:left;
+padding: 20px;
+line-height: 30px;
+}
+#navbar a{
+text-decoration: none;
+color: white;
+padding-right:15px;
+font-size:25px;
+}
+#navbar a:hover{
+color: red;
+border-bottom: 5px solid blue;
+}
+#showcase{
+background-image: url(../images/3bg1.jpg);
+min-height: 300px;
+background-position: center right;
+margin-bottom: 30px;
+text-align: center;
+}
+#showcase h2{
+color:white;
+text-transform: capitalize;
+padding-top: 30px;
+font-size: 50px;
+}
+#main{
+float: left;
+width: 70%;
+padding: 0 30px;
+box-sizing: border-box;
+}
+#main p{
+font-weight: bold;
+text-align: justify;
+}
+#sidebar{
+float: right;
+width: 30%;
+background-color:black;
+color: white;
+padding: 10px;
+box-sizing: border-box;
+border-radius:30px;
+font-weight: bold;
+text-align: justify;
+}
+#foot1{
+background-color: black;
+color: white;
+padding: 30px;
+text-align: center;
+margin-top: 40px;
+font-size:30px;
+width: 100%;
+height:50px;
+}
+@media(max-width: 600px){
+#main{
+width: 100%;
+fload: none;
+}
+#sidebar{
+width: 100%;
+fload: none;
+}
+}
